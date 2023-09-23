@@ -3,7 +3,7 @@ export const config = {
 }
 
 const engine = new URL('https://duckduckgo.com/');
-const domain = new URL('https://docs.astro.build');
+const domain = new URL('https://theodinproject.com');
 const redirect = (url: string | URL) => new Response(null, { status: 301, headers: { Location: url.toString() }})
 
 export default async function handler(request: Request) {
